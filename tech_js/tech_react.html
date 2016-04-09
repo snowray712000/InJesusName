@@ -6,15 +6,25 @@
 	<meta charset="utf-8" />
   <script src="Scripts/jquery-2.2.2.min.js"></script>
   <script src="Scripts/react/react.min.js"></script>
+  <style>
+    .dark{
+      background-color:black;
+      color:white;
+    }
+  </style>
 </head>
 <body>
   <div id="re1"></div>
   <script>
     var Rhello_react = React.createClass(
       {
+        
         render: function()
         {
-          return React.createElement("div", {}, "hello world react");
+          return React.createElement("span",
+            {
+              "className":"dark"
+            }, "hello world react");
         }
       });
   </script>
