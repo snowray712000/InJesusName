@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+  <script src="Scripts/jquery-2.2.2.min.js"></script>
+  <script src="Scripts/react/react.min.js"></script>
+</head>
+<body>
+  <div id="re1"></div>
+  <script>
+    var Rhello_react = React.createClass(
+      {
+        render: function()
+        {
+          return React.createElement("div", {}, "hello world react");
+        }
+      });
+  </script>
+
+  <script>
+    $(function ()
+    {
+      var rhello_react = React.createElement(Rhello_react, {});
+      var rrhello_react = React.render(rhello_react, document.getElementById("re1"));
+    });
+  </script>
+</body>
+</html>
